@@ -47,8 +47,3 @@ def clear_screen() -> None:
     else:
         os.system("clear")
     return None
-
-if __name__ == "__main__":
-    ve = VinegereEngine("vinegere")
-    message = "opnx ycjxzu vw isfp"
-    print(decrypt(key_engine=ve, cipher=message))
