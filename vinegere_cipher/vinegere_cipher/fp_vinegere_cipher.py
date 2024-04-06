@@ -5,7 +5,7 @@ from string import ascii_lowercase
 
 def _key_rotor(key: str) -> Generator[str]:
     for i in key:
-        assert i in ascii_lowercase, f"{i} ::: item is not part of this alphabet"
+        assert i in ascii_lowercase, f"{i} :: item is not part of this alphabet"
     while True:
         for i in key:
             yield i
