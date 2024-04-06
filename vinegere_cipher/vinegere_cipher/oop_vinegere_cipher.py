@@ -6,12 +6,12 @@ class VinegereEngine() :
     def __init__(self, key: str) -> None:
         for n,i in enumerate(key):
             assert i.lower() in ascii_lowercase, f"key[{n}] = {i} ::: item is not part of this alphabet"
-        self.key = key.lower()
+        self._key = key.lower()
         self._next_key = self._key_rotor()
 
     def _key_rotor(self):
         while True:
-            for i in self.key:
+            for i in self._key:
                 yield i
 
     @property
