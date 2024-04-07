@@ -42,13 +42,13 @@ class FreqAnalysisAttack():
 
     def match_frequencies(self) -> None:
         for outer_char in self.alphabet:
-            map = {}
+            mappings = {}
             for inner_char in self.alphabet:
-                map[inner_char] = round(
+                mappings[inner_char] = round(
                     abs(self.freq[outer_char] - self.expected_freq[inner_char]),
                     4
                 )
-            self.mappings[outer_char] = sorted(map.items(), key=itemgetter(1))
+            self.mappings[outer_char] = sorted(mappings.items(), key=itemgetter(1))
         return None
 
     def guess_key(self) -> None:
@@ -101,7 +101,7 @@ class FreqAnalysisAttack():
 if __name__ == "__main__":
 
     attack = FreqAnalysisAttack()
-    attack.load_cipher(path = "/home/braniac/dai_wsl/study/pythonic/cryptography/frequency_analysis/cipher2.txt")
+    attack.load_cipher(path = "/home/braniac/dai_wsl/study/pythonic/cryptography/frequency_analysis/cipher.txt")
     attack.calculate_freq()
     attack.match_frequencies()
 
