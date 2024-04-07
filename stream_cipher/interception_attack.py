@@ -13,7 +13,7 @@ def main() -> None:
     intercepted_cipher = interception_attack(cipher=cipher)
     
     decrypyed_cipher = xor(key_stream=key, message=intercepted_cipher)
-    print(f"decrypted cipher: {decrypyed_cipher.decode()}\n")
+    print(f"decrypted cipher: {decrypyed_cipher.decode('utf-8')}\n")
 
     return None
 

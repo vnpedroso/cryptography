@@ -5,7 +5,7 @@ from stream_cipher.stream_cipher import (
 )
 
 def main() -> None:
-    message = input("your message to encrypt/decrypt: ")
+    message = input("your message to encrypt: ")
     seed = int(input("seed: "))
     clear_screen()
 

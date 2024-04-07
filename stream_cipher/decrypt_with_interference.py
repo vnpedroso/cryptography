@@ -15,7 +15,7 @@ def main() -> None:
     transmitted_cipher = faulty_transmisson(cipher=cipher, inverse_prob=10)
 
     decrypted_cipher = xor(key_stream=key, message=transmitted_cipher)
-    print(f"decrypted cipher: {decrypted_cipher.decode()}\n")
+    print(f"decrypted cipher: {decrypted_cipher.decode('utf-8')}\n")
 
     return None
 

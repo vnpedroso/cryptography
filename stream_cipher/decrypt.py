@@ -11,7 +11,7 @@ def main() -> None:
 
     key = KeyStream(seed)
     decrypted_cipher = xor(key_stream=key, message=message)
-    print(f"decrypted cipher: {decrypted_cipher.decode()}\n")
+    print(f"decrypted cipher: {decrypted_cipher.decode('utf-8')}\n")
 
     return None
 
