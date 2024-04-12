@@ -101,29 +101,12 @@ class FreqAnalysisAttack():
 if __name__ == "__main__":
 
     attack = FreqAnalysisAttack()
-    attack.load_cipher(path = "/home/braniac/dai_wsl/study/pythonic/cryptography/frequency_analysis/cipher.txt")
+    attack.load_cipher(path = "./cryptography/frequency_analysis/cipher.txt")
     attack.calculate_freq()
     attack.match_frequencies()
 
-    # CIPHER
-    # attack.manual_key_mapping(cipher_char="p",char="h")
-    # attack.manual_key_mapping(cipher_char="v",char="c")
-    # attack.manual_key_mapping(cipher_char="m",char="a")
-    # attack.manual_key_mapping(cipher_char="q",char="k")
-    # attack.manual_key_mapping(cipher_char="k",char="n")
-    # attack.manual_key_mapping(cipher_char="n",char="u")
-    # attack.manual_key_mapping(cipher_char="x",char="f")
-    # attack.manual_key_mapping(cipher_char="o",char="g")
-    # attack.manual_key_mapping(cipher_char="u",char="r")
-    # attack.manual_key_mapping(cipher_char="s",char="p")
-    # attack.manual_key_mapping(cipher_char="e",char="v")
-    # attack.manual_key_mapping(cipher_char="a",char="x")
-    # attack.manual_key_mapping(cipher_char="f",char="q")
-    # attack.manual_key_mapping(cipher_char="g",char="z")
-    # attack.manual_key_mapping(cipher_char="d",char="d")
-    # attack.manual_key_mapping(cipher_char="c",char="w")
+    #for crytography/substitution_cipher/frequency_analysis/cipher.txt
 
-    #CIPHER2
     # attack.manual_key_mapping(cipher_char="z",char="y")
     # attack.manual_key_mapping(cipher_char="p",char="o")
     # attack.manual_key_mapping(cipher_char="m",char="u")
